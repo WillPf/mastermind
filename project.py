@@ -20,11 +20,15 @@ def main():
             black, white = (check_answer(sequence, player_guess))
             window[line].update(f"{"⚫️" * black}{"⚪️" * white}")
             if black == 4:
+                with open("./stats.txt", "a") as f:
+                    f.write(stats(line, black))
                 if show_answer(sequence, "w") == "quit":
                     break
                 restart()
             line += 1
             if line > 9:
+                with open("./stats.txt", "a") as f:
+                    f.write(stats(line, black))
                 if show_answer(sequence, "l") == "quit":
                     break
                 restart()
@@ -79,6 +83,12 @@ def show_answer(seq, str):
         elif event == "Retry":
             break
     window.close()
+
+
+def stats(line, black):
+    if black == 4:
+        return f"Game won in {line + 1} steps\n"
+    return "Game lost\n"
 
 
 if __name__ == "__main__":
