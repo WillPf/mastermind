@@ -1,3 +1,20 @@
 Game won in 4 steps
 Game lost
 Game won in 6 steps
+Game won in 7 steps
+Game won in 4 steps
+Game won in 6 steps
+Game won in 7 steps
+Game won in 6 steps
+Game won in 6 steps
+Game won in 7 steps
+Game won in 5 steps
+Game won in 5 steps
+Game won in 5 steps
+Game lost
+Game won in 7 steps
+Game won in 7 steps
+Game won in 6 steps
+Game lost
+Game won in 6 steps
+Game won in 6 steps
